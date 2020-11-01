@@ -14,7 +14,7 @@ with open('tmp.txt','w',encoding='utf-8') as f:
         prefix3 = "</i></li>"
 
         title = rows[i].getElementsByTagName('Data')[3].firstChild.data
-        author = rows[i].getElementsByTagName('Data')[7].firstChild.data.replace(';',',')
+        author = rows[i].getElementsByTagName('Data')[7].firstChild.data.replace(';',',').replace('*','')
         # author_list = author.split(';')
         # author = ''
         # for j in range(len(author_list)):
